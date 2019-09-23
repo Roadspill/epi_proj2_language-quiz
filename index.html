@@ -18,11 +18,13 @@
 
 <body>
   <header>
-    <div class="container">
-      <div class="jumbotron mt-3 mb-0 pt-1 pb-1">
+    <div class="container text-center">
+      <div class="jumbotron mt-3 mb-0 pt-4 pb-4">
         <div class="container">
-          <h1 class="display-4">Your First Programming Language Quiz</h1>
-          <hr class="my-4">
+          <div class="text-center">
+            <h1 class="display-4 text-center">Your First Programming Language Quiz</h1>
+          </div>
+          <hr class="pacmon my-4 text-center">
           <p class="lead">The answers you select will pick your fate as a new programmer.</p>
         </div>
       </div>
@@ -32,14 +34,200 @@
   <main>
     <!-- Quiz Form -->
     <div class="container">
-      <div class="card mt-3">
-        <div class="card-header">
-          Your Results!
+      <div class="card border-info mt-3">
+        <div class="card-header" id="quizHeader">
+          <h2>The Best First Programming Language Quiz!!!</h2>
         </div>
         <div class="card-body">
-          <h5 class="card-title" id="chosenLanguage">Error Checking Language Result</h5>
-          <p class="card-text" id="aboutLanguage">Error Checking About Language</p>
-          <a href="#" class="btn btn-primary">Error Checking Button</a>
+          <h3 class="card-title h5 spanishgray">Please select the answers that best describe you.</h3>
+          <form>
+
+            <div class="form-group">
+              <label for="firstName" class="h5">First Name:</label>
+              <input type="text" class="form-control" id="firstName" placeholder="First Name">
+            </div>
+
+            <div class="form-group">
+              <label for="age" class="h5">Age: (Max Age: 125)</label>
+              <input type="number" class="form-control" id="age" placeholder="Age" min="1" max="125">
+            </div>
+
+            <div class="form-group">
+              <label for="favoriteColor" class="h5">What's your favorite color?</label>
+              <select id="favoriteColor" class="form-control" id="favoriteColor">
+                <option value="1">Red</option>
+                <option value="2">Blue</option>
+                <option value="3">Black</option>
+                <option value="4">Yellow</option>
+                <option value="5">Purple</option>
+                <option value="6">Green</option>
+                <option value="7">Pink</option>
+                <option value="8">Brown</option>
+                <option value="9">White</option>
+                <option value="10">Grey</option>
+              </select>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <legend class="mt-3 h5">Please select your favorite food:</legend>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="favoriteFood" id="americanFood" value="1" checked>
+                  <label class="form-check-label" for="americanFood">
+                    American Food
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="favoriteFood" id="italianFood" value="2">
+                  <label class="form-check-label" for="italianFood">
+                    Italian Food
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="favoriteFood" id="thaiFood" value="3">
+                  <label class="form-check-label" for="thaiFood">
+                    Thai Food
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="favoriteFood" id="chineseFood" value="4">
+                  <label class="form-check-label" for="chineseFood">
+                    Chinese Food
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="favoriteFood" id="koreanFood" value="5">
+                  <label class="form-check-label" for="koreanFood">
+                    Korean Food
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="favoriteFood" id="steakHouseFood" value="6">
+                  <label class="form-check-label" for="steakHouseFood">
+                    Steak House Food
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="favoriteFood" id="mexicanFood" value="7">
+                  <label class="form-check-label" for="chineseFood">
+                    Mexican Food
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="favoriteFood" id="seaFood" value="8">
+                  <label class="form-check-label" for="seaFood">
+                    Seafood
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="favoriteFood" id="veganFood" value="9">
+                  <label class="form-check-label" for="veganFood">
+                    Vegan Food
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="favoriteFood" id="glutenFreeFood" value="10">
+                  <label class="form-check-label" for="glutenFreeFood">
+                    Gluten Free Food
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-6 form-group">
+                <legend class="mt-3 h5">
+                  What are your favorite games?
+                </legend>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="1" id="videoGame1">
+                  <label class="form-check-label" for="videoGame1">
+                    Zelda
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="2" id="videoGame2">
+                  <label class="form-check-label" for="videoGame2">
+                    Super Mario Brothers
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="3" id="videoGame3">
+                  <label class="form-check-label" for="videoGame3">
+                    F-Zero
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="4" id="videoGame4">
+                  <label class="form-check-label" for="videoGame4">
+                    Mario Party
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="5" id="videoGame5">
+                  <label class="form-check-label" for="videoGame5">
+                    Castlevania
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="6" id="videoGame6">
+                  <label class="form-check-label" for="videoGame6">
+                    Mario Kart
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="7" id="videoGame7">
+                  <label class="form-check-label" for="videoGame7">
+                    Gauntlet
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="8" id="videoGame8">
+                  <label class="form-check-label" for="videoGame8">
+                    Animal Crossing
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="9" id="videoGame9">
+                  <label class="form-check-label" for="videoGame9">
+                    Teenage Mutant Ninja Turtles
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="10" id="videoGame10">
+                  <label class="form-check-label" for="videoGame10">
+                    Pokemon
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="car" class="h5">What kind of car are you?</label>
+              <select id="favoriteColor" class="form-control" id="favoriteColor">
+                <option value="1">Delorian</option>
+                <option value="2">Pinto</option>
+                <option value="3">Neon</option>
+                <option value="4">Charger</option>
+                <option value="5">Camaro</option>
+                <option value="6">Mustang</option>
+                <option value="7">Prius</option>
+                <option value="8">Ferrari</option>
+                <option value="9">Lamborghini</option>
+                <option value="10">Bugatti</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <legend class="ht5">Do you like coffee?</legend>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="coffeeDrinker" id="yesCoffee" value="1">
+                <label class="form-check-label" for="yesCoffee">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="coffeeDrinker" id="noCoffee" value="0">
+                <label class="form-check-label" for="noCoffee">No</label>
+              </div>
+            </div>
+
+          </form>
         </div>
       </div>
     </div>
@@ -59,7 +247,6 @@
         </div>
       </div>
     </div>
-
   </footer>
 
 

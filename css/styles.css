@@ -1,0 +1,36 @@
+:root {
+  --raisenblack: #1D1F23;
+  --spacecadet: #22355B;
+  --spanishgray: #919399;
+  --azureishwhite: #D4E0F7;
+  --ghostwhite: #F7F8FC;
+}
+
+footer .container {
+  display: none;
+}
+
+header .jumbotron {
+  background-color: var(--raisenblack);
+  color: var(--ghostwhite);
+}
+
+.spanishgray {
+  color: var(--spanishgray);
+}
+
+hr.pacmon {
+  border: 0;
+  height: 25px;
+  background-image: url(../img/type_3.png);
+  background-attachment: scroll;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* pacman image -> https://www.formget.com/css-hr/ --> https://a8q8p3f5.stackpathcdn.com/wp-content/uploads/2014/12/type_3.png  */
+}
+
+#quizHeader {
+  background-color: var(--spacecadet);
+  color: var(--ghostwhite);
+}
