@@ -34,13 +34,13 @@
   <main>
     <!-- Quiz Form -->
     <div class="container">
-      <div class="card border-info mt-3">
+      <div class="card border-info my-3">
         <div class="card-header" id="quizHeader">
           <h2>The Best First Programming Language Quiz!!!</h2>
         </div>
         <div class="card-body">
           <h3 class="card-title h5 spanishgray">Please select the answers that best describe you.</h3>
-          <form>
+          <form id="programmingLanguageQuiz">
 
             <div class="form-group">
               <label for="firstName" class="h5">First Name:</label>
@@ -48,13 +48,13 @@
             </div>
 
             <div class="form-group">
-              <label for="age" class="h5">Age: (Max Age: 125)</label>
-              <input type="number" class="form-control" id="age" placeholder="Age" min="1" max="125">
+              <label for="yourAge" class="h5">Age: (Max Age: 125)</label>
+              <input type="number" class="form-control" id="yourAge" placeholder="Age" min="1" max="125">
             </div>
 
             <div class="form-group">
               <label for="favoriteColor" class="h5">What's your favorite color?</label>
-              <select id="favoriteColor" class="form-control" id="favoriteColor">
+              <select id="favoriteColor" class="form-control">
                 <option value="1">Red</option>
                 <option value="2">Blue</option>
                 <option value="3">Black</option>
@@ -137,61 +137,61 @@
                   What are your favorite games?
                 </legend>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="1" id="videoGame1">
+                  <input class="form-check-input" type="radio" name="favoriteGame" value="1" id="videoGame1" checked>
                   <label class="form-check-label" for="videoGame1">
                     Zelda
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="2" id="videoGame2">
+                  <input class="form-check-input" type="radio" name="favoriteGame" value="2" id="videoGame2">
                   <label class="form-check-label" for="videoGame2">
                     Super Mario Brothers
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="3" id="videoGame3">
+                  <input class="form-check-input" type="radio" name="favoriteGame" value="3" id="videoGame3">
                   <label class="form-check-label" for="videoGame3">
                     F-Zero
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="4" id="videoGame4">
+                  <input class="form-check-input" type="radio" name="favoriteGame" value="4" id="videoGame4">
                   <label class="form-check-label" for="videoGame4">
                     Mario Party
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="5" id="videoGame5">
+                  <input class="form-check-input" type="radio" name="favoriteGame" value="5" id="videoGame5">
                   <label class="form-check-label" for="videoGame5">
                     Castlevania
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="6" id="videoGame6">
+                  <input class="form-check-input" type="radio" name="favoriteGame" value="6" id="videoGame6">
                   <label class="form-check-label" for="videoGame6">
                     Mario Kart
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="7" id="videoGame7">
+                  <input class="form-check-input" type="radio" name="favoriteGame" value="7" id="videoGame7">
                   <label class="form-check-label" for="videoGame7">
                     Gauntlet
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="8" id="videoGame8">
+                  <input class="form-check-input" type="radio" name="favoriteGame" value="8" id="videoGame8">
                   <label class="form-check-label" for="videoGame8">
                     Animal Crossing
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="9" id="videoGame9">
+                  <input class="form-check-input" type="radio" name="favoriteGame" value="9" id="videoGame9">
                   <label class="form-check-label" for="videoGame9">
                     Teenage Mutant Ninja Turtles
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="10" id="videoGame10">
+                  <input class="form-check-input" type="radio" name="favoriteGame" value="10" id="videoGame10">
                   <label class="form-check-label" for="videoGame10">
                     Pokemon
                   </label>
@@ -201,7 +201,7 @@
 
             <div class="form-group">
               <label for="car" class="h5">What kind of car are you?</label>
-              <select id="favoriteColor" class="form-control" id="favoriteColor">
+              <select id="favoriteCar" class="form-control">
                 <option value="1">Delorian</option>
                 <option value="2">Pinto</option>
                 <option value="3">Neon</option>
@@ -222,10 +222,13 @@
                 <label class="form-check-label" for="yesCoffee">Yes</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="coffeeDrinker" id="noCoffee" value="0">
+                <input class="form-check-input" type="radio" name="coffeeDrinker" id="noCoffee" value="0" checked>
                 <label class="form-check-label" for="noCoffee">No</label>
               </div>
             </div>
+
+            <button type="submit" class="btn btn-lg btn-primary mt-5 px-5">Submit</button>
+
 
           </form>
         </div>
@@ -236,9 +239,9 @@
   <footer>
     <!-- Results -->
     <div class="container">
-      <div class="card mt-3">
+      <div class="card my-3">
         <div class="card-header">
-          Your Results!
+          Your Results! <span id="#total"></span>
         </div>
         <div class="card-body">
           <h5 class="card-title" id="chosenLanguage">Error Checking Language Result</h5>
