@@ -11,7 +11,7 @@ _The user takes a short quiz with several multiple choice questions and is prese
 ## Setup/Installation Requirements
 
 - Setup
-  _ Load on GitHub Pages
+  _ Load on [GitHub Pages](https://roadspill.github.io/epi_proj2_language-quiz/)
   _ Clone/Download Repo
 - Load in browser of choice.
 - Take Quiz

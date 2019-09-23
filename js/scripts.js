@@ -10,6 +10,10 @@ var scrollDown = function () {
   }, 'fast');
 };
 
+var firstName = function (name) {
+  $("#yourName").text(name);
+};
+
 
 // Start of javascript
 $(document).ready(function () {
@@ -28,6 +32,7 @@ $(document).ready(function () {
 
     if (result === 0) {
       // Javascript
+      firstName(yourName);
       $("#chosenLanguage").text("Javascript");
       $("#aboutLanguage").text("Javascript is the best language out their, and because of your amazing talents we chose this as your first language.");
       $("#languageURL").text("Learn Javascript")
@@ -36,6 +41,7 @@ $(document).ready(function () {
       scrollDown();
     } else if (result === 1) {
       // Java
+      firstName(yourName);
       $("#chosenLanguage").text("Java");
       $("#aboutLanguage").text("Java is well suited for you because you love complex puzzles, and problem solving.");
       $("#languageURL").text("Learn Java")
@@ -43,7 +49,8 @@ $(document).ready(function () {
       $("footer").fadeIn(1000);
       scrollDown();
     } else if (result === 2) {
-      // Javascript
+      // Go
+      firstName(yourName);
       $("#chosenLanguage").text("Go");
       $("#aboutLanguage").text("Go is an extremely easy language to learn, so we thought you'd love to start here.");
       $("#languageURL").text("Learn Go")
@@ -51,7 +58,8 @@ $(document).ready(function () {
       $("footer").fadeIn(1000);
       scrollDown();
     } else if (result === 3) {
-      // Javascript
+      // PHP
+      firstName(yourName);
       $("#chosenLanguage").text("PHP");
       $("#aboutLanguage").text("PHP is our pick for you as we know you love a challenge.");
       $("#languageURL").text("Learn PHP")
@@ -59,7 +67,8 @@ $(document).ready(function () {
       $("footer").fadeIn(1000);
       scrollDown();
     } else if (result === 4) {
-      // Javascript
+      // Python
+      firstName(yourName);
       $("#chosenLanguage").text("Python");
       $("#aboutLanguage").text("We chose Python for you for your love of all things related to snakes.");
       $("#languageURL").text("Learn Python")
