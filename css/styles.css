@@ -6,9 +6,10 @@
   --ghostwhite: #F7F8FC;
 }
 
-/* footer .container {
+footer,
+h3.error {
   display: none;
-} */
+}
 
 header .jumbotron {
   background-color: var(--raisenblack);

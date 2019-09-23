@@ -4,6 +4,12 @@ var quizCalc = function (number1, number2, number3, number4, number5) {
   // return (number1 + number2 + number3 + number4 + number5)
 };
 
+var scrollDown = function () {
+  $('html, body').animate({
+    scrollTop: $(document).height()
+  }, 'fast');
+};
+
 
 // Start of javascript
 $(document).ready(function () {
@@ -24,34 +30,45 @@ $(document).ready(function () {
       // Javascript
       $("#chosenLanguage").text("Javascript");
       $("#aboutLanguage").text("Javascript is the best language out their, and because of your amazing talents we chose this as your first language.");
-      $("footer a #languageURL").text("Learn Javascript")
-      $("footer a").attr("href", "https://www.learn-js.org/")
+      $("#languageURL").text("Learn Javascript")
+      $("#languageURL").attr("href", "https://www.learn-js.org/")
+      $("footer").fadeIn(1000);
+      scrollDown();
     } else if (result === 1) {
       // Java
       $("#chosenLanguage").text("Java");
       $("#aboutLanguage").text("Java is well suited for you because you love complex puzzles, and problem solving.");
-      $("footer a #languageURL").text("Learn Java")
-      $("footer a").attr("href", "https://www.learnjavaonline.org/")
+      $("#languageURL").text("Learn Java")
+      $("#languageURL").attr("href", "https://www.learnjavaonline.org/")
+      $("footer").fadeIn(1000);
+      scrollDown();
     } else if (result === 2) {
       // Javascript
       $("#chosenLanguage").text("Go");
       $("#aboutLanguage").text("Go is an extremely easy language to learn, so we thought you'd love to start here.");
-      $("footer a #languageURL").text("Learn Go")
-      $("footer a").attr("href", "https://www.learn-golang.org/")
+      $("#languageURL").text("Learn Go")
+      $("#languageURL").attr("href", "https://www.learn-golang.org/")
+      $("footer").fadeIn(1000);
+      scrollDown();
     } else if (result === 3) {
       // Javascript
       $("#chosenLanguage").text("PHP");
       $("#aboutLanguage").text("PHP is our pick for you as we know you love a challenge.");
-      $("footer a #languageURL").text("Learn PHP")
-      $("footer a").attr("href", "https://www.learn-php.org/")
+      $("#languageURL").text("Learn PHP")
+      $("#languageURL").attr("href", "https://www.learn-php.org/")
+      $("footer").fadeIn(1000);
+      scrollDown();
     } else if (result === 4) {
       // Javascript
       $("#chosenLanguage").text("Python");
       $("#aboutLanguage").text("We chose Python for you for your love of all things related to snakes.");
-      $("footer a #languageURL").text("Learn Python")
-      $("footer a").attr("href", "https://www.learnpython.org/")
+      $("#languageURL").text("Learn Python")
+      $("#languageURL").attr("href", "https://www.learnpython.org/")
+      $("footer").fadeIn(1000);
+      scrollDown();
     } else {
-
+      $("h3.error").fadeIn(1000);
+      scrollDown();
     }
 
     // Error Testing
